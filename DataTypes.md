@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### 1. What is typeof operator?
  - [x] Answer: JavaScript provides a typeof operator that can examine a value and tell you what type it is:
 ```js
@@ -133,3 +134,15 @@ console.log(a[b]);
 The reason for this is as follows: When setting an object property, JavaScript will implicitly stringify the parameter value. In this case, since b and c are both objects, they will both be converted to "[object Object]". As a result, a[b] anda[c] are both equivalent to a["[object Object]"] and can be used interchangeably. Therefore, setting or referencing a[c] is precisely the same as setting or referencing a[b].
 
 ### 8. 
+=======
+### 1. What is NaN property
+The NaN property is a global property that represents "Not-a-Number" value. i.e, It indicates that a value is not a legal number. It is very rare to use NaN in a program but it can be used as return value for few cases
+```js
+Math.sqrt(-1);
+parseInt("Hello");
+````
+
+### 2. What is the reason to choose the name let as a keyword
+
+`let` is a mathematical statement that was adopted by early programming languages like Scheme and Basic. It has been borrowed from dozens of other languages that use let already as a traditional keyword as close to var as possible.
+>>>>>>> 33f1d2c... [feat:] general questions added

@@ -1,3 +1,54 @@
+### What is the purpose of dir method of console object
+The console.dir() is used to display an interactive list of the properties of the specified JavaScript object as JSON.
+
+```js
+const user = { name: "John", id: 1, city: "Delhi" };
+console.dir(user);
+```
+
+### What is a strict mode in javascript
+Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a “strict” operating context. This way it prevents certain actions from being taken and throws more exceptions. The literal expression "use strict"; instructs the browser to use the javascript code in the Strict mode.
+
+### What are the list of cases error thrown from non-strict mode to strict mode
+When you apply `'use strict'`; syntax, some of the below cases will throw a SyntaxError before executing the script
+
+- When you use Octal syntax
+    `var n = 022;`
+- Using with statement
+- When you use delete operator on a variable name
+- Using eval or arguments as variable or function argument name
+- When you use newly reserved keywords
+- When you declare a function in a block
+    ```js
+        if (someCondition) {
+        function f() {}
+        }
+    ```
+
+Hence, the errors from above cases are helpful to avoid errors in development/production environments.
+
+
+### How do you declare strict mode
+The strict mode is declared by adding "use strict"; to the beginning of a script or a function. If declared at the beginning of a script, it has global scope.
+
+```js
+"use strict";
+x = 3.14; // This will cause an error because x is not declared
+```
+and if you declare inside a function, it has local scope
+```js
+x = 3.14; // This will not cause an error.
+myFunction();
+
+function myFunction() {
+  "use strict";
+  y = 3.14; // This will cause an error
+}
+```
+
+### What is a service worker
+A Service worker is basically a script (JavaScript file) that runs in the background, separate from a web page and provides features that don't need a web page or user interaction. Some of the major features of service workers are Rich offline experiences(offline first web application development), periodic background syncs, push notifications, intercept and handle network requests and programmatically managing a cache of responses.
+
 ### 1. Name the types of functions
 
 **The types of function are:**
@@ -85,7 +136,11 @@ It is a logical operator that returns its right-hand side operand when its left-
     console.log(false ?? true); // false
     console.log(undefined ?? true); // true
 ```
+### What is the output of below console statement with unary operator
+Let's take console statement with unary operator as given below,
 
+`console.log(+"Hello");`
+The output of the above console log statement returns NaN. Because the element is prefixed by the unary operator and the JavaScript interpreter will try to convert that element into a number type. Since the conversion fails, the value of the statement results in NaN value.
 
 ## Conditional
 

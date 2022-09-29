@@ -1,3 +1,6 @@
+###  What is JavaScript?
+`JavaScript` is a `lightweight`, `interpreted` programming language with object-oriented capabilities that allows you to build interactivity into otherwise static HTML pages. The general-purpose core of the language has been embedded in Netscape, Internet Explorer, and other web browsers.
+
 ### 1. What is the purpose of dir method of console object?
 - [x] Answer: The console.dir() is used to display an interactive list of the properties of the specified JavaScript object as JSON.
 
@@ -203,4 +206,48 @@ function traceValue(someParam) {
 - `Unit testing` – Testing individual functions and classes
 - `Integration testing` – Testing that components work together as expected
 - `UI/Functional testing` – Testing the interface and functioning of the actual application
+
+### 21.  What are the differences between global and local variables? And how can having too many global variables negatively affect your code?
+
+- [x] Answer:
+
+- Global variables have no scope and are accessible globally — they’re fully available and accessible throughout your code.
+
+However, global variables can also be more difficult to debug as coupling occurs between the many global variables, making bugs more likely, as well as more difficult to find and debug. There can also be conflicts between variable names in the local and global scope.
+
+
+### 22.  What are the differences between undeclared and undefined variables?
+
+- [x] Answer:
+
+`Undeclared` variable: a variable that isn’t declared as a variable using the `var` , `const` or `let` keywords.
+
+`Undefined` variable: a variable that has been defined using one of the variable keywords, but hasn’t been given a value.
+
+ ### 23  Name 3 JavaScript frameworks and give a short description of what they’re used for:
+
+- [x] Answer:
+
+Could include:
+
+- AngularJS
+- React
+- Vue.js
+- Ember.js
+- Express.js
+- Meteor
+- Polymer
+- Mithril.js
+- Svelte
+- Backbone
+- jQuery
+
+### 24 What are the variable naming conventions in JavaScript?
+
+The following rules are to be followed while `naming` variables in JavaScript:
+
+- You should not use any of the JavaScript `reserved keyword` as variable name. For example, break or boolean variable names are not valid.
+- JavaScript variable names should not start with a numeral (0-9). They must begin with a letter or the underscore character. For example, 123name is an invalid variable name but _123name or name123 is a valid one.
+- JavaScript variable names are case sensitive. For example, Test and test are two different variables.
+
 

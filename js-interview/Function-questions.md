@@ -1,5 +1,18 @@
 ### Questions about `functions`  in JavaScript
 
+### What are arrow functions and what benefits do they bring in your code?
+- [x] Answer:
+  
+Arrow functions were introduced in ES6 and are a shorthand version of writing traditional functions. They save room and can make code more easily readable, are quicker to write, and can make coding more efficient. They also inherit the parent version of `this`.
+```js
+// pre-ES6 traditional way
+function (height) {
+  return height + 10;
+}
+
+// post-ES6 way with arrow functions
+height => height + 10;
+```
 ### 1.  What will the following code output? Why?
 
 ```js
@@ -100,4 +113,32 @@ f(8): returns 8 * f(7), which is 40320
 f(9): returns 9 * f(8), which is 362880
 f(10): returns 10 * f(9), which is 3628800
 ```
-### 5
+### 5 What will the following code output to the console and why:
+
+```js
+var hero = {
+    _name: 'John Doe',
+    getSecretIdentity: function (){
+        return this._name;
+    }
+};
+
+var stoleSecretIdentity = hero.getSecretIdentity;
+
+console.log(stoleSecretIdentity());
+console.log(hero.getSecretIdentity());
+```
+- [x] Answer: The code will output:
+ ```js
+ undefined
+  John Doe
+```
+The first `console.log` prints undefined because we are extracting the method from the hero object, so stoleSecretIdentity() is being invoked in the global context (i.e., the window object) where the _name property does not exist.
+
+One way to fix the stoleSecretIdentity() function is as follows:
+
+### 6. What is the isNaN function?
+- [x] Answer: 
+
+The `isNaN` function determines whether a value is, or is not, a number (Not-a-Number). If the value is not a number, it will evaluate to `true`, and if the value is a number, it will evaluate to `false`.
+

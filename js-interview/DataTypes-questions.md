@@ -132,6 +132,39 @@ console.log(a[b]);
 
 The reason for this is as follows: When setting an object property, JavaScript will implicitly stringify the parameter value. In this case, since b and c are both objects, they will both be converted to "[object Object]". As a result, a[b] anda[c] are both equivalent to a["[object Object]"] and can be used interchangeably. Therefore, setting or referencing a[c] is precisely the same as setting or referencing a[b].
 
-### 8. 
+### 8. Explain Null and Undefined in JavaScript ?
+
+- [x] Answer: JavaScript (and by extension TypeScript) has two bottom types: null and undefined. They are intended to mean different things:
+- Something hasn't been initialised : undefined.
+- Something is currently unavailable: null.
+
+### 9. What is the difference between Attributes and Property?
+- Attributes-  provide more details on an element like id, type, value etc.
+
+- Property-  is the value assigned to the property like type=”text”, value=’Name’ etc.
+
+### 10 What is a Typed language?
+Typed Language is in which the values are associated with values and not with variables. It is of two types:
+
+- `Dynamically`: in this, the variable can hold multiple types; like in JS a variable can take number, chars.
+- `Statically`: in this, the variable can hold only one type, like in Java a variable declared of string can take only set of characters and nothing else.
+
+### 11. What is the difference between null & undefined?
+Undefined means a variable has been `declared` but has not yet been `assigned` a value. On the other hand, null is an assignment value. It can be assigned to a variable as a representation of no value. Also, undefined and null are two distinct types: undefined is a type itself (undefined) while null is an object.
+
+### 12 What is NaN in JavaScript?
+`NaN` is a short form of `Not a Number`. Since NaN always compares unequal to any number, including `NaN`, it is usually used to indicate an error condition for a function that should return a valid number. When a string or something else is being converted into a number and that cannot be done, then we get to see `NaN`.
+
+In case you are facing any challenges with these JavaScript Interview Questions, please comment on your problems in the section below.
+
+### 13. How can you convert the string of any base to integer in JavaScript?
+The `parseInt()` function is used to convert numbers between different bases. It takes the string to be converted as its first parameter, and the second parameter is the base of the given string.
+
+For example-
+
+```js
+	
+parseInt("4F", 16)
+```
 
 

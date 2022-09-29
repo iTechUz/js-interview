@@ -63,4 +63,6 @@ The and (&&) operator. In an expression of the form X&&Y, X is first evaluated a
 
 However, the interesting thing with the && operator is that when an expression is evaluated as “true”, then the expression itself is returned. This is fine, since it counts as “true” in logical expressions, but also can be used to return that value when you care to do so. This explains why, somewhat surprisingly, 1 && 2 returns 2 (whereas you might it expect it to return true or 1).
 
-### 5. 
+### 5. What would be the result of 2+5+”3″?
+
+Since 2 and 5 are integers, they will be added numerically. And since 3 is a string, its concatenation will be done. So the result would be 73. The ” ” makes all the difference here and represents 3 as a string and not a number.

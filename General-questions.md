@@ -1,16 +1,19 @@
-### What is the purpose of dir method of console object
-The console.dir() is used to display an interactive list of the properties of the specified JavaScript object as JSON.
+###  What is JavaScript?
+`JavaScript` is a `lightweight`, `interpreted` programming language with object-oriented capabilities that allows you to build interactivity into otherwise static HTML pages. The general-purpose core of the language has been embedded in Netscape, Internet Explorer, and other web browsers.
+
+### 1. What is the purpose of dir method of console object?
+- [x] Answer: The console.dir() is used to display an interactive list of the properties of the specified JavaScript object as JSON.
 
 ```js
 const user = { name: "John", id: 1, city: "Delhi" };
 console.dir(user);
 ```
 
-### What is a strict mode in javascript
-Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a “strict” operating context. This way it prevents certain actions from being taken and throws more exceptions. The literal expression "use strict"; instructs the browser to use the javascript code in the Strict mode.
+### 2. What is a strict mode in javascript
+- [x] Answer: Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a “strict” operating context. This way it prevents certain actions from being taken and throws more exceptions. The literal expression "use strict"; instructs the browser to use the javascript code in the Strict mode.
 
-### What are the list of cases error thrown from non-strict mode to strict mode
-When you apply `'use strict'`; syntax, some of the below cases will throw a SyntaxError before executing the script
+### 3. What are the list of cases error thrown from non-strict mode to strict mode
+- [x] Answer: When you apply `'use strict'`; syntax, some of the below cases will throw a SyntaxError before executing the script
 
 - When you use Octal syntax
     `var n = 022;`
@@ -28,8 +31,8 @@ When you apply `'use strict'`; syntax, some of the below cases will throw a Synt
 Hence, the errors from above cases are helpful to avoid errors in development/production environments.
 
 
-### How do you declare strict mode
-The strict mode is declared by adding "use strict"; to the beginning of a script or a function. If declared at the beginning of a script, it has global scope.
+### 4. How do you declare strict mode?
+- [x] Answer: The strict mode is declared by adding "use strict"; to the beginning of a script or a function. If declared at the beginning of a script, it has global scope.
 
 ```js
 "use strict";
@@ -46,11 +49,11 @@ function myFunction() {
 }
 ```
 
-### What is a service worker
-A Service worker is basically a script (JavaScript file) that runs in the background, separate from a web page and provides features that don't need a web page or user interaction. Some of the major features of service workers are Rich offline experiences(offline first web application development), periodic background syncs, push notifications, intercept and handle network requests and programmatically managing a cache of responses.
+### 5. What is a service worker
+- [x] Answer: A Service worker is basically a script (JavaScript file) that runs in the background, separate from a web page and provides features that don't need a web page or user interaction. Some of the major features of service workers are Rich offline experiences(offline first web application development), periodic background syncs, push notifications, intercept and handle network requests and programmatically managing a cache of responses.
 
-### 1. Name the types of functions
-
+### 6. Name the types of functions
+- [x] Answer:
 **The types of function are:**
 
 - **Named** - These type of functions contains name at the time of definition. For Example:
@@ -71,22 +74,22 @@ A Service worker is basically a script (JavaScript file) that runs in the backgr
     display();
 ```
 
-### 2. Is javascript a statically typed or a dynamically typed language?
+### 7. Is javascript a statically typed or a dynamically typed language?
 
-JavaScript is a dynamically typed language. In a dynamically typed language, the type of a variable is checked during **run-time** in contrast to a statically typed language, where the type of a variable is checked during **compile-time**.
+- [x] Answer: JavaScript is a dynamically typed language. In a dynamically typed language, the type of a variable is checked during **run-time** in contrast to a statically typed language, where the type of a variable is checked during **compile-time**.
 
 
-### 3. What are global variables?
+### 8. What are global variables?
 
-Global variables are those that are available throughout the length of the code without any scope. The var keyword is used to declare a local variable but if you omit it then it will become global variable
+- [x] Answer: Global variables are those that are available throughout the length of the code without any scope. The var keyword is used to declare a local variable but if you omit it then it will become global variable
 
 ```js 
     msg = "Hello"; // var is missing, it becomes global variable
 ```
 
-### 4. What are the differences between undeclared and undefined variables
+### 9. What are the differences between undeclared and undefined variables?
 
-Below are the major differences between undeclared(not defined) and undefined variables,
+- [x] Answer: Below are the major differences between undeclared(not defined) and undefined variables,
 
 - **undeclared**
 
@@ -98,16 +101,16 @@ Below are the major differences between undeclared(not defined) and undefined va
   - These variables declared in the program but have not assigned any value
   - If you try to read the value of an undefined variable, an undefined value is returned.
 
-### 5. How do you assign default values to variables
-You can use the logical or operator || in an assignment expression to provide a default value. The syntax looks like as below,
+### 10. How do you assign default values to variables?
+- [x] Answer: You can use the logical or operator || in an assignment expression to provide a default value. The syntax looks like as below,
 
 ```js
     var a = b || c;
 ```
 As per the above expression, variable 'a 'will get the value of 'c' only if 'b' is falsy (if is null, false, undefined, 0, empty string, or NaN), otherwise 'a' will get the value of 'b'.
 
-### 6. What is the precedence order between local and global variables
-A local variable takes precedence over a global variable with the same name. Let's see this behavior in an example.
+### 11. What is the precedence order between local and global variables?
+- [x] Answer: A local variable takes precedence over a global variable with the same name. Let's see this behavior in an example.
 ```js
     var msg = "Good morning";
     function greeting() {
@@ -117,35 +120,33 @@ A local variable takes precedence over a global variable with the same name. Let
     greeting();
 ```
 
-### 7. Is const variable makes the value immutable
-No, the const variable doesn't make the value immutable. But it disallows subsequent assignments(i.e, You can declare with assignment but can't assign another value later)
+### 12. Is const variable makes the value immutable?
+- [x] Answer: No, the const variable doesn't make the value immutable. But it disallows subsequent assignments(i.e, You can declare with assignment but can't assign another value later)
 ```js
     const userList = [];
     userList.push("John"); // Can mutate even though it can't re-assign
     console.log(userList); // ['John']
 ```
 
-
-
 ## nullish coalescing operator
 
-### 8. What is nullish coalescing operator (??)?
-It is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand. This can be contrasted with the logical OR (||) operator, which returns the right-hand side operand if the left operand is any falsy value, not only null or undefined.
+### 13. What is nullish coalescing operator (??)?
+- [x] Answer: It is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand. This can be contrasted with the logical OR (||) operator, which returns the right-hand side operand if the left operand is any falsy value, not only null or undefined.
 ```js
     console.log(null ?? true); // true
     console.log(false ?? true); // false
     console.log(undefined ?? true); // true
 ```
-### What is the output of below console statement with unary operator
-Let's take console statement with unary operator as given below,
+### 14. What is the output of below console statement with unary operator?
+- [x] Answer: Let's take console statement with unary operator as given below,
 
 `console.log(+"Hello");`
 The output of the above console log statement returns NaN. Because the element is prefixed by the unary operator and the JavaScript interpreter will try to convert that element into a number type. Since the conversion fails, the value of the statement results in NaN value.
 
 ## Conditional
 
-### 9. What is a conditional operator in javascript
-The conditional (ternary) operator is the only JavaScript operator that takes three operands which acts as a shortcut for if statements.
+### 15. What is a conditional operator in javascript
+- [x] Answer: The conditional (ternary) operator is the only JavaScript operator that takes three operands which acts as a shortcut for if statements.
 
 ```js
     var isAuthenticated = false;
@@ -154,8 +155,8 @@ The conditional (ternary) operator is the only JavaScript operator that takes th
     ); //Sorry, you are not authenticated
 ```
 
-### 10. Can you apply chaining on conditional operator
-Yes, you can apply chaining on conditional operators similar to if … else if … else if … else chain. The syntax is going to be as below,
+### 16. Can you apply chaining on conditional operator?
+- [x] Answer: Yes, you can apply chaining on conditional operators similar to if … else if … else if … else chain. The syntax is going to be as below,
 ```js
 function traceValue(someParam) {
   return condition1
@@ -181,3 +182,73 @@ function traceValue(someParam) {
   }
 }
 ```
+
+### 17. What are the ways to define a variable in JavaScript?
+- [x] Answer: The three possible ways of defining a variable in JavaScript are:
+- `Var` - The JavaScript variables statement is used to declare a variable and, optionally, we can initialize the value of that variable. Example: var a =10; Variable declarations are processed before the execution of the code.
+- `Const` – The idea of const functions is not allow them to modify the object on which they are called. When a function is declared as const, it can be called on any type of object.
+- `Let` – It is a signal that the variable may be reassigned, such as a counter in a loop, or a value swap in an algorithm. It also signals that the variable will be used only in the block it’s defined in.
+  
+### 18. What is a Typed language?
+- [x] Answer: Typed Language is in which the values are associated with values and not with variables. It is of two types:
+
+ - `Dynamically`: in this, the variable can hold multiple types; like in JS a variable can take number, chars.
+ - `Statically`: in this, the variable can hold only one type, like in Java a variable declared of string can take only set of characters and nothing else.
+
+### 19. What is ‘this’ keyword in JavaScript? How do you use it?
+
+- [x] Answer: The ‘this’ keyword refers to the object from where it was called. In their answer, the candidate should tell about call, bind, and apply.
+
+### 20. Give some ideas to implement automated testing on our JavaScript code?
+
+- [x] Answer: Automated testing is essential when building robust applications. Great developers are keenly familiar with and can implement:
+
+- `Unit testing` – Testing individual functions and classes
+- `Integration testing` – Testing that components work together as expected
+<<<<<<< HEAD:js-interview/General-questions.md
+- `UI/Functional testing` – Testing the interface and functioning of the actual application
+
+### 21.  What are the differences between global and local variables? And how can having too many global variables negatively affect your code?
+
+- [x] Answer:
+
+- Global variables have no scope and are accessible globally — they’re fully available and accessible throughout your code.
+
+However, global variables can also be more difficult to debug as coupling occurs between the many global variables, making bugs more likely, as well as more difficult to find and debug. There can also be conflicts between variable names in the local and global scope.
+
+
+### 22.  What are the differences between undeclared and undefined variables?
+
+- [x] Answer:
+
+`Undeclared` variable: a variable that isn’t declared as a variable using the `var` , `const` or `let` keywords.
+
+`Undefined` variable: a variable that has been defined using one of the variable keywords, but hasn’t been given a value.
+
+ ### 23  Name 3 JavaScript frameworks and give a short description of what they’re used for:
+
+- [x] Answer:
+
+Could include:
+
+- AngularJS
+- React
+- Vue.js
+- Ember.js
+- Express.js
+- Meteor
+- Polymer
+- Mithril.js
+- Svelte
+- Backbone
+- jQuery
+
+### 24 What are the variable naming conventions in JavaScript?
+
+The following rules are to be followed while `naming` variables in JavaScript:
+
+- You should not use any of the JavaScript `reserved keyword` as variable name. For example, break or boolean variable names are not valid.
+- JavaScript variable names should not start with a numeral (0-9). They must begin with a letter or the underscore character. For example, 123name is an invalid variable name but _123name or name123 is a valid one.
+- JavaScript variable names are case sensitive. For example, Test and test are two different variables.
+- `UI/Functional testing` – Testing the interface and functioning of the actual application
+

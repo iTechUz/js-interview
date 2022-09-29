@@ -1,6 +1,6 @@
 ### Questions about `functions`  in JavaScript
 
-### What are arrow functions and what benefits do they bring in your code?
+### 1.What are arrow functions and what benefits do they bring in your code?
 - [x] Answer:
   
 Arrow functions were introduced in ES6 and are a shorthand version of writing traditional functions. They save room and can make code more easily readable, are quicker to write, and can make coding more efficient. They also inherit the parent version of `this`.
@@ -13,7 +13,7 @@ function (height) {
 // post-ES6 way with arrow functions
 height => height + 10;
 ```
-### 1.  What will the following code output? Why?
+### 2.  What will the following code output? Why?
 
 ```js
  function foo(){
@@ -30,33 +30,6 @@ height => height + 10;
 
 Counterintuitively, the program will output b. This is because both of the bar() functions in the code snippet will be hoisted to the top of the scope. The second one returning the string ’b‘ will be hoisted after the first, so that function will be called in the return statement.
 
-### 2. What will the code below output to the console and why?
-```js
-var myObject = {
-    foo: "bar",
-    func: function() {
-        var self = this;
-        console.log("outer func:  this.foo = " + this.foo);
-        console.log("outer func:  self.foo = " + self.foo);
-        (function() {
-            console.log("inner func:  this.foo = " + this.foo);
-            console.log("inner func:  self.foo = " + self.foo);
-        }());
-    }
-};
-myObject.func();
-```
-
-- [x] Answer: The above code will output the following to the console:
-```js
-outer func:  this.foo = bar
-outer func:  self.foo = bar
-inner func:  this.foo = undefined
-inner func:  self.foo = bar
-```
-In the outer function, both this and self refer to myObject and therefore both can properly reference and access foo.
-
-In the inner function, though, this no longer refers to myObject. As a result, this.foo is undefined in the inner function, whereas the reference to the local variable self remains in scope and is accessible there.
 
 ### 3. In what order will the numbers 1-4 be logged to the console when the code below is executed? Why?
 
@@ -142,3 +115,31 @@ One way to fix the stoleSecretIdentity() function is as follows:
 
 The `isNaN` function determines whether a value is, or is not, a number (Not-a-Number). If the value is not a number, it will evaluate to `true`, and if the value is a number, it will evaluate to `false`.
 
+
+### 7. What will the code below output to the console and why?
+```js
+var myObject = {
+    foo: "bar",
+    func: function() {
+        var self = this;
+        console.log("outer func:  this.foo = " + this.foo);
+        console.log("outer func:  self.foo = " + self.foo);
+        (function() {
+            console.log("inner func:  this.foo = " + this.foo);
+            console.log("inner func:  self.foo = " + self.foo);
+        }());
+    }
+};
+myObject.func();
+```
+
+- [x] Answer: The above code will output the following to the console:
+```js
+outer func:  this.foo = bar
+outer func:  self.foo = bar
+inner func:  this.foo = undefined
+inner func:  self.foo = bar
+```
+In the outer function, both this and self refer to myObject and therefore both can properly reference and access foo.
+
+In the inner function, though, this no longer refers to myObject. As a result, this.foo is undefined in the inner function, whereas the reference to the local variable self remains in scope and is accessible there.

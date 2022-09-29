@@ -3,8 +3,8 @@
 
 - Two strings are strictly equal when they have the same sequence of characters, same length, and same characters in corresponding positions.
 - Two numbers are strictly equal when they are numerically equal. i.e, Having the same number value. There are two special cases in this,
-  - NaN is not equal to anything, including NaN.
-  - Positive and negative zeros are equal to one another.
+- NaN is not equal to anything, including NaN.
+- Positive and negative zeros are equal to one another.
 - Two Boolean operands are strictly equal if both are true or both are false.
 - Two objects are strictly equal if they refer to the same Object.
 - Null and Undefined types are not equal with ===, but equal with ==. i.e, null===undefined --> false but null==undefined --> true

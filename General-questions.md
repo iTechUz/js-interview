@@ -203,4 +203,3 @@ function traceValue(someParam) {
 - `Unit testing` – Testing individual functions and classes
 - `Integration testing` – Testing that components work together as expected
 - `UI/Functional testing` – Testing the interface and functioning of the actual application
-
